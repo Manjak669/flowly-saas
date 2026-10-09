@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flowly — Plan less, ship more</title>
+  <meta name="description" content="Flowly turns messy to-do lists into a clear weekly plan. Automatic scheduling, focus time and team sync in one place.">
+  <meta property="og:title" content="Flowly — Plan less, ship more">
+  <meta property="og:description" content="Automatic scheduling, focus time and team sync in one place.">
+  <meta name="theme-color" content="#0b0b14">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%237c5cff'/%3E%3Cpath d='M16 40c8-16 16 0 32-16' stroke='white' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#" class="logo" aria-label="Flowly home">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="url(#lg)"/><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7c5cff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs><path d="M16 40c8-16 16 0 32-16" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round"/></svg>
+        Flowly
+      </a>
+      <nav class="nav__links" aria-label="Main">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#signup" class="btn btn--small">Start free</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <a href="#features" class="pill reveal"><span class="pill__new">New</span> AI weekly planner is live <span aria-hidden="true">→</span></a>
+      <h1 class="reveal">Plan less.<br><span class="gradient-text">Ship more.</span></h1>
+      <p class="hero__lead reveal">Flowly turns your messy task list into a realistic weekly plan, protects focus time, and keeps your team in sync without another meeting.</p>
+      <form class="signup reveal" id="signup" novalidate>
+        <label class="sr-only" for="email">Work email</label>
+        <input id="email" type="email" placeholder="you@company.com" autocomplete="email" required>
+        <button class="btn" type="submit">Get early access</button>
+        <p class="signup__msg" role="status" aria-live="polite"></p>
+      </form>
+      <p class="hero__small reveal">Free for 14 days · No credit card · Demo site</p>
+
+      <div class="mock reveal" aria-label="Product preview" role="img">
+        <div class="mock__bar"><span></span><span></span><span></span><p>flowly.app/week</p></div>
+        <div class="mock__body">
+          <aside class="mock__side">
+            <div class="mock__item is-active">This week</div>
+            <div class="mock__item">Focus</div>
+            <div class="mock__item">Team</div>
+            <div class="mock__item">Reports</div>
+          </aside>
+          <div class="mock__cal">
+            <div class="mock__days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span></div>
+            <div class="mock__grid">
+              <div class="blk b1" style="--c:1;--r:1/3">Design review</div>
+              <div class="blk b2" style="--c:2;--r:2/5">Deep work · API</div>
+              <div class="blk b3" style="--c:3;--r:1/2">Standup</div>
+              <div class="blk b1" style="--c:3;--r:3/5">Write docs</div>
+              <div class="blk b4" style="--c:4;--r:1/4">Focus block</div>
+              <div class="blk b3" style="--c:5;--r:2/3">Demo</div>
+              <div class="blk b2" style="--c:5;--r:4/6">Ship v2 🚀</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="logos container" aria-label="Trusted by">
+      <p>Trusted by 2,000+ small teams</p>
+      <div class="logos__row" aria-hidden="true"><span>NOVA</span><span>loop/</span><span>Brightly</span><span>◆ Kite</span><span>Orbit</span><span>hexa</span></div>
+    </section>
+
+    <section class="section container" id="features" aria-labelledby="features-title">
+      <p class="eyebrow">Features</p>
+      <h2 id="features-title">Everything your week needs.<br>Nothing it doesn't.</h2>
+      <div class="features">
+        <article class="card reveal"><div class="card__icon">⚡</div><h3>Auto-scheduling</h3><p>Drop tasks in, Flowly finds the time. Deadlines, priorities and meetings are all taken into account.</p></article>
+        <article class="card reveal"><div class="card__icon">🎧</div><h3>Focus guard</h3><p>Protects deep-work blocks and mutes notifications so you actually finish what matters.</p></article>
+        <article class="card reveal"><div class="card__icon">👥</div><h3>Team sync</h3><p>See who is busy, share plans, and replace status meetings with a two-minute async update.</p></article>
+        <article class="card reveal"><div class="card__icon">📈</div><h3>Weekly report</h3><p>Where your time really went, in one clean chart every Friday.</p></article>
+        <article class="card reveal"><div class="card__icon">🔗</div><h3>Integrations</h3><p>Google Calendar, Outlook, Slack, Notion and GitHub out of the box.</p></article>
+        <article class="card reveal"><div class="card__icon">🔒</div><h3>Private by default</h3><p>Your calendar stays yours. Encrypted at rest and in transit.</p></article>
+      </div>
+    </section>
+
+    <section class="section stats container" aria-label="Results">
+      <div class="stat reveal"><strong data-count="6.5" data-decimals="1" data-suffix="h">0</strong><span>saved per person each week</span></div>
+      <div class="stat reveal"><strong data-count="38" data-suffix="%">0</strong><span>fewer meetings</span></div>
+      <div class="stat reveal"><strong data-count="2000" data-suffix="+">0</strong><span>teams planning with Flowly</span></div>
+    </section>
+
+    <section class="section container" id="pricing" aria-labelledby="pricing-title">
+      <p class="eyebrow">Pricing</p>
+      <h2 id="pricing-title">Simple pricing that grows with you</h2>
+      <div class="billing" role="group" aria-label="Billing period">
+        <span id="lbl-month">Monthly</span>
+        <button class="switch" role="switch" aria-checked="false" aria-labelledby="lbl-month lbl-year" id="billing"><span></span></button>
+        <span id="lbl-year">Yearly <em>−20%</em></span>
+      </div>
+      <div class="plans">
+        <article class="plan reveal">
+          <h3>Starter</h3>
+          <p class="plan__desc">For individuals getting organised.</p>
+          <p class="plan__price"><span data-month="0" data-year="0">$0</span><small>/ month</small></p>
+          <ul><li>Personal planner</li><li>2 calendar connections</li><li>Weekly report</li></ul>
+          <a href="#signup" class="btn btn--ghost btn--full">Start free</a>
+        </article>
+        <article class="plan plan--featured reveal">
+          <p class="plan__badge">Most popular</p>
+          <h3>Pro</h3>
+          <p class="plan__desc">For makers who live in their calendar.</p>
+          <p class="plan__price"><span data-month="12" data-year="9.6">$12</span><small>/ month</small></p>
+          <ul><li>Everything in Starter</li><li>AI auto-scheduling</li><li>Focus guard</li><li>Unlimited integrations</li></ul>
+          <a href="#signup" class="btn btn--full">Try Pro free</a>
+        </article>
+        <article class="plan reveal">
+          <h3>Team</h3>
+          <p class="plan__desc">For teams up to 50 people.</p>
+          <p class="plan__price"><span data-month="24" data-year="19.2">$24</span><small>/ user / month</small></p>
+          <ul><li>Everything in Pro</li><li>Shared team views</li><li>Async standups</li><li>Admin &amp; SSO</li></ul>
+          <a href="#signup" class="btn btn--ghost btn--full">Talk to us</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container testimonials" aria-label="What customers say">
+      <figure class="quote reveal"><blockquote>“We cut our weekly sync from an hour to ten minutes. Flowly basically runs our sprint planning.”</blockquote><figcaption><span class="avatar" style="--h:260">AK</span>Alex K., CTO at Nova</figcaption></figure>
+      <figure class="quote reveal"><blockquote>“The first planner that understands I can't do eight hours of meetings and eight hours of coding on the same day.”</blockquote><figcaption><span class="avatar" style="--h:190">MS</span>Maya S., indie developer</figcaption></figure>
+    </section>
+
+    <section class="section container" id="faq" aria-labelledby="faq-title">
+      <p class="eyebrow">FAQ</p>
+      <h2 id="faq-title">Questions, answered</h2>
+      <div class="faq">
+        <details><summary>Does Flowly replace my calendar?</summary><p>No. It works on top of Google Calendar or Outlook and writes your plan back into it.</p></details>
+        <details><summary>What happens after the free trial?</summary><p>You stay on the free Starter plan unless you choose to upgrade. Nothing is charged automatically.</p></details>
+        <details><summary>Can I use it with my team?</summary><p>Yes. The Team plan adds shared views, async standups and admin controls.</p></details>
+        <details><summary>Is my data safe?</summary><p>Data is encrypted at rest and in transit, and we never sell or share it.</p></details>
+      </div>
+    </section>
+
+    <section class="cta container reveal">
+      <h2>Your best week starts Monday.</h2>
+      <a href="#signup" class="btn">Get early access</a>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© <span id="year"></span> Flowly. Fictional product, demo website.</p>
+    <p>Designed &amp; built by <a href="https://moonwave-studio.com" target="_blank" rel="noopener">MoonWave</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
